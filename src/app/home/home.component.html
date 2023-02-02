@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+
+<body>
+  <header class="section-header sticky-top">
+    <section class="header-main">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-lg-2 col-sm-4 col-4">
+            <a style="font-size: 19px;font-weight: bold;" href="" id="chan">
+
+
+
+            </a> <!-- brand end.// -->
+
+          </div>
+
+
+        </div> <!-- row end.// -->
+      </div> <!-- container end.// -->
+    </section>
+    <p>
+
+      <img style="height:2rem; margin-top:-4rem;margin-bottom: -2rem;padding-left: 5rem;"
+        src="assets/images/posts/logo.png" data-bs-toggle="collapse" href="#collapseExample" role="button"
+        aria-expanded="false" aria-controls="collapseExample">
+
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div style="font-size:14px;    justify-items: center;
+      " class="card card-body">
+        Manual attendance systems are plagued by buddy-punching and time-theft. Since the data is entered manually,
+        it can easily be manipulated. The students may provide inaccurate
+        information for extra income, resulting in less productivity and increased costs.
+
+        The “Online Attendance Management App” gives reduced paperwork and saves time to generate accurate results from
+        employees’ attendance. It provides security by using individual login IDs and passwords.
+      </div>
+    </div> <!-- header-main end.// -->
+
+  </header> <!-- section-header end.// -->
+
+  <header class="site-header sticky-top py-1 bg-dark">
+    <nav class="navbar  navbar-light bg-dark border-top navbar-expand-lg" style="height:5rem">
+      <div class="container-fluid">
+        <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_main">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar_main">
+          <ul class="navbar-nav">
+
+            <li class="nav-item dropdown">
+
+            </li>
+          </ul>
+          <div class="order-lg-last col-lg-5 col-sm-8 col-8" style="margin-left:60rem;">
+            <div class="float-end">
+              <a href="home" class="btn btn-light" style=" margin-left: 1rem;">
+                <i class="fa fa-home"></i> <span class="ms-1 d-none d-sm-inline-block">Home </span>
+              </a>
+              <a href="home" class="btn btn-light">
+                <i class="fa fa-calendar"></i> <span class="ms-1 d-none d-sm-inline-block">Calendar</span>
+
+              </a>
+              <a data-bs-toggle="offcanvas" href="#offcanvas_cart" class="btn btn-light">
+                <i class="fa fa-user"></i> <span class="ms-1">User </span>
+              </a>
+            </div>
+          </div> <!-- col end.// -->
+
+        </div> <!-- collapse end.// -->
+      </div> <!-- container end.// -->
+    </nav>
+
+  </header>
+
+
+
+
+  <section class="padding-y bg-light">
+    <div class="container">
+
+      <div class="card bg-primary p-5"
+        style="min-height:280px;background-repeat: no-repeat; background-size: cover; background-image: url('assets/images/posts/13.jpg');border-color: bisque;box-shadow: 1px 1px 0px bisque;">
+        <header class="text-center mt-5">
+          <h2 class="text-dark">Time & Attendance Management Software</h2>
+          <p class="text-dark">Unlock higher productivity and make the most of your student’s <br>
+            time with an integrated and advanced time and attendance management software.</p>
+        </header>
+        <form class="mx-auto w-100 mb-3" style="max-width: 720px">
+          <div class="row g-2 w-100">
+            <div class="col flex-grow">
+              <div class="input-group">
+                <select class="form-select" style="max-width:30%" fdprocessedid="">
+                  <option>Qr Code</option>
+                  <option>Send to Email</option>
+                  <option>Not</option>
+                </select>
+                <input type="text" placeholder="Send to Email" class="form-control" name="">
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <!-- <button class="btn btn-warning" fdprocessedid=""> Generate </button> -->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Generate Code
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Qr Code</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="qr">
+                      <qrcode [width]="200" qrdata="https://www.youtube.com/watch?v=CC6R9MPVgTk"
+                        [errorCorrectionLevel]="'H'"></qrcode>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+      <!-- =================== COMPONENT 1 .// ================== -->
+      <br>
+      <br>
+      <!-- =================== COMPONENT for the card ====================== -->
+      <div class="card">
+        <div class="content-body">
+          <nav class="row gy-4">
+
+            <!-- col.// -->
+
+
+
+            <!-- col.// -->
+
+            <!-- col.// -->
+            <div class="col-xl col-lg-2 col-md-3 col-4">
+              <a href="home" class="item-link text-center">
+                <span class="icon icon-lg mb-2 rounded-3">
+                  <i style="color:black" width="42" height="42" color="black" class="fa fa-file-text"></i>
+                </span>
+                <h6>Seamlessly Integrated</h6>
+                <span class="text" style="font-size:12px"> Rest easy with multi-channel attendance inputs like
+                  biometric,
+                  and web check-ins seamlessly flowing as outputs to other functions like payroll. </span>
+              </a>
+            </div>
+            <!-- col.// -->
+            <div class="col-xl col-lg-2 col-md-3 col-4">
+              <a href="home" class="item-link text-center">
+                <span class="icon icon-lg mb-2 rounded-3">
+                  <i style="color:black" width="42" height="42" color="black" class="fa fa-contact-card"></i>
+                </span>
+                <h6>Contactless & Safe</h6>
+                <span class="text" style="font-size:12px"> Go contactless with features like A.I. enabled facial
+                  recognition, geo-tagged check-ins and virtual ID cards to ensure employees’ safe return to work.
+                </span>
+              </a>
+            </div>
+            <!-- col.// -->
+            <div class="col-xl col-lg-2 col-md-3 col-4">
+              <a href="home" class="item-link text-center">
+                <span class="icon icon-lg mb-2 rounded-3">
+                  <i style="color:black" width="42" height="42" color="black" class="fa fa-gears"></i>
+                </span>
+                <h6>Configurable Policy Engine</h6>
+                <span class="text" style="font-size:12px">Create bespoke T&A policies with an extremely granular control
+                  for a wide range of configuration settings </span>
+              </a>
+            </div>
+            <!-- col.// -->
+            <div class="col-xl col-lg-2 col-md-3 col-4">
+              <a href="home" class="item-link text-center">
+                <span class="icon icon-lg mb-2 rounded-3">
+                  <i style="color:black" width="42" height="42" color="black" class="fa fa-key"></i>
+                </span>
+                <h6>Highly Secure</h6>
+                <span class="text" style="font-size:12px">Get clear audit trails for policies, granular permissions and
+                  custom approval flows to keep data secure, compliant and if needed, confidential.</span>
+              </a>
+            </div>
+            <!-- col.// -->
+          </nav>
+        </div>
+        <!-- card-body.// -->
+      </div>
+      <!-- card.// -->
+      <!-- =================== COMPONENT 2 .// ================== -->
+      <br>
+      <br>
+      <!-- =================== COMPONENT for the form ====================== -->
+      <div class="card">
+        <header class="card-img-top overflow-hidden bg-cover"
+          style="background-image: url('assets/images/banners/att.jpg');">
+          <div class="card-body bg-dark-50">
+            <div class="d-lg-flex align-items-end">
+              <div class="itemside mt-lg-5 flex-auto">
+                <div class="aside">
+                  <img src="assets/images/banners/image-removebg-preview.png" class="img-md rounded-3" width="100"
+                    height="100px">
+                </div>
+                <div class="info">
+                  <p class="text-white">Attendance System</p>
+                  <h3 class="text-white">Fill up the Form</h3>
+                  <p class="text-white-50">Accurate and efficient solution for registration, time management and
+                    attendance.
+                  </p>
+                </div>
+              </div>
+
+
+
+              <div class="modal fade " id="exampleModalToggle" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel">Attendance Online!</h5><br><br>
+
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img style="padding-left:3rem" src="assets/images/posts/4.png" class="me-2" height="200"><br><br>
+                      Setting up students and classes is very easy and you can be off and running in no time at all.
+                      Tracking is entirely
+                      web-based so you can enter data from anywhere you can access the internet!
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Learn More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel2">About More in the System</h5>
+
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    </div>
+                    <div class="modal-body">
+
+                      <img style="float:left;" src="assets/images/posts/5.png" class="me-2" height="350">
+                      <p style="padding-top: 3rem;"> I much more than just attendance tracking! Teachers and instructors
+                        can
+                        report grades online, track student progress, message parents, manage classes and more, all in
+                        one FREE online app.</p>
+                      <br><br>
+                      <h6 style="color:burlywood"> Simplify Student Grading</h6>
+                      I made keeping the student grading process simple and integrated into the student and class flow.
+                      Simply add your assements and criteria and you
+                      can assign grades easily from anywhere while you are tracking attendance.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                        data-bs-dismiss="modal"><i style="padding:10px " class="fa fa-rotate-back"></i>Back</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-sm btn-outline-light" style="width:7rem" data-bs-toggle="modal"
+                href="#exampleModalToggle" role="button">Learn More</a>
+            </div>
+          </div>
+          <!-- card-body.// -->
+        </header>
+        <div class="row g-0">
+          <aside class="col-lg-3 border-end">
+            <nav class="nav flex-column nav-pills m-3">
+              <a href="home" class="nav-link active">Reminder</a>
+              <a href="home" class="nav-link">Seamlessly Integrated</a>
+              <a href="home" class="nav-link">Contactless & Safe</a>
+              <a href="home" class="nav-link">Configurable Policy Engine</a>
+              <a href="home" class="nav-link">Highly Secure</a>
+              <a href="home" class="nav-link">Other </a>
+            </nav>
+          </aside>
+          <div class="col-lg-9">
+            <div class="content-body">
+              <h4 class="card-title">Attendance Form</h4>
+              <form #form="ngForm">
+                <div class="row">
+                  <div class="col-md-5">
+                    <label>Full Name</label>
+                  </div>
+                  <div class="col-md-7" style="margin-top: 1rem">
+                    <input type="text" placeholder="Full Name" name="FirstName" required #fname="ngModel"
+                      [(ngModel)]="homeObj.FirstName" class="form-control" />
+                    <div *ngIf="fname.touched">
+                      <span class="text-danger font-weight-bold" *ngIf="fname.errors?.['required']">
+                        Required</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-md-5">
+                    <label>Course</label>
+                  </div>
+                  <div class="col-md-7" style="margin-top:1rem">
+                    <input type="text" placeholder="Course" name="course" #Course="ngModel" required
+                      [(ngModel)]="homeObj.Course" class="form-control" />
+                    <div *ngIf="Course.touched">
+                      <span class="text-danger" *ngIf="Course.errors?.['required']"> Required</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5">
+                    <label>E-mail</label>
+                  </div>
+                  <div class="col-md-7" style="margin-top:1rem">
+                    <input type="text" placeholder="Email" name="email" #Email="ngModel" required
+                      [(ngModel)]="homeObj.Email" class="form-control" />
+                    <div *ngIf="Email.touched">
+                      <span class="text-danger" *ngIf="Email.errors?.['required']"> Required</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5" id="input">
+                    <label>Batch</label>
+                  </div>
+                  <div class="col-md-7" style="margin-top:1rem">
+                    <input type="text" placeholder="Input year Batch" name="batch" #Batch="ngModel" required
+                      [(ngModel)]="homeObj.Batch" class="form-control" />
+                    <div *ngIf="Batch.touched">
+                      <span class="text-danger" *ngIf="Batch.errors?.['required']"> Required</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="row">
+                  <div class="col-md-5" id="input">
+                    <label>Certifications If Any</label>
+                  </div>
+                  <div class="col-md-4" style="margin-top:1rem">
+                    <input type="radio" value="Yes" name="IsCertification" [(ngModel)]="employeeObj.IsCertification" />
+                    Yes
+                    <input type="radio" value="No" name="IsCertification" [(ngModel)]="employeeObj.IsCertification" />
+                    No
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5">
+
+                  </div>
+                  <div class="col-md-7">
+                    <input type="text" placeholder="Certification"
+                      [disabled]="employeeObj.IsCertification == 'No' || employeeObj.IsCertification == ''"
+                      name="Certification" #Certification="ngModel" [(ngModel)]="employeeObj.Certification"
+                      class="form-control" />
+
+                  </div>
+                </div> -->
+                <!-- <div class="row">
+                  <div class="col-md-5">
+                    <label>Company</label>
+                  </div>
+                  <div class="col-md-7" style="margin-top:1rem">
+                    <input type="text" name="Company" placeholder="Company Name" #Company="ngModel" required
+                      [(ngModel)]="employeeObj.Company" class="form-control" />
+                    <div *ngIf="Company.touched">
+                      <span class="text-danger" *ngIf="Company.errors?.['required']"> Required</span>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class="row" style="margin-top:1rem">
+                  <div class="col-md-6">
+                  </div>
+                  <div class="col-md-6 text-end">
+                    <button class="btn btn-primary btn-sm " style="padding-left: 20px;padding-right: 20px;">
+                      Cancel</button>
+                    <button class="btn btn-primary btn-sm mx-2" style="padding-left: 25px;padding-right: 25px;"
+                      [disabled]="form.invalid" (click)="onSave()"> Save</button>
+                  </div>
+                </div>
+              </form>
+              <!-- itemside .// -->
+
+              <!-- itemside .// -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =================== COMPONENT .// ================== -->
+      <br>
+      <br>
+      <!-- =================== COMPONENT for the developer page ====================== -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <article class="card card-product-grid">
+            <a href="#">
+              <img src="assets/images/posts/1.png" height="200" class="card-img-top" alt="product image">
+            </a>
+            <div class="card-body pt-0">
+              <div class="float-end mt-n5">
+                <img class="img-sm rounded-3 obj-contain border" src="assets/images/posts/1.png" width="72" height="72">
+              </div>
+              <div class="pt-3 pe-5">
+                <h6 class="card-title mb-0">
+                  <a href="#">Christian Misa</a>
+                </h6>
+                <p class="mb-1 text-muted">Front End Developer</p>
+
+                <span class="badge bg-warning">
+                  <i class="fa fa-envelope-circle-check"></i> Gmail</span>
+                <span class="text-success small ms-2">
+                  <i style="padding:10px " class="fab fa-lg fa-pinterest"></i>
+                  <i style="padding:2px " class="fab fa-lg fa-facebook"></i>
+                  <i style="padding:10px " class="fab fa-lg fa-instagram"></i></span>
+              </div>
+            </div>
+            <!-- card-body.// -->
+          </article>
+        </div>
+        <!-- col.// -->
+        <div class="col-lg-3 col-md-6">
+          <article class="card card-product-grid">
+            <a href="#">
+              <img src="assets/images/posts/albert.jpg" height="200" class="card-img-top" alt="product image">
+            </a>
+            <div class="card-body pt-0">
+              <div class="float-end mt-n5">
+                <img class="img-sm rounded-3 obj-contain border" src="assets/images/posts/albert.jpg" width="72"
+                  height="72">
+              </div>
+              <div class="pt-3 pe-5">
+                <h6 class="card-title mb-0">
+                  <a href="#">Albert Monceda</a>
+                </h6>
+                <p class="mb-1 text-muted"> Front End Developer </p>
+                <span class="badge bg-warning">
+                  <i class="fa fa-envelope-circle-check"></i> Gmail</span>
+                <span class="text-success small ms-2">
+                  <i style="padding:10px " class="fab fa-lg fa-pinterest"></i>
+                  <i style="padding:2px " class="fab fa-lg fa-facebook"></i>
+                  <i style="padding:10px " class="fab fa-lg fa-instagram"></i></span>
+              </div>
+            </div>
+            <!-- card-body.// -->
+          </article>
+        </div>
+        <!-- col.// -->
+        <div class="col-lg-3 col-md-6">
+          <article class="card card-restaurant-grid">
+            <a href="#">
+              <img src="assets/images/posts/jan.jpg" height="200" class="card-img-top" alt="product image">
+            </a>
+            <div class="card-body pt-0">
+              <div class="float-end mt-n5">
+                <img class="img-sm rounded-3 obj-contain border" src="assets/images/posts/jan.jpg" width="72"
+                  height="72">
+              </div>
+              <div class="pt-3 pe-5">
+                <h6 class="card-title mb-0">
+                  <a href="#">Janrae Fagaragan</a>
+                </h6>
+                <p class="mb-1 text-muted"> Back End Developer</p>
+                <span class="badge bg-warning">
+                  <i class="fa fa-envelope-circle-check"></i> Gmail</span>
+                <span class="text-success small ms-2">
+                  <i style="padding:10px " class="fab fa-lg fa-pinterest"></i>
+                  <i style="padding:2px " class="fab fa-lg fa-facebook"></i>
+                  <i style="padding:10px " class="fab fa-lg fa-instagram"></i> </span>
+              </div>
+            </div>
+            <!-- card-body.// -->
+          </article>
+        </div>
+        <!-- col.// -->
+        <!-- col.// -->
+        <div class="col-lg-3 col-md-6">
+          <article class="card card-restaurant-grid">
+            <a href="#">
+              <img src="assets/images/posts/3.png" height="200" class="card-img-top" alt="product image">
+            </a>
+            <div class="card-body pt-0">
+              <div class="float-end mt-n5">
+                <img class="img-sm rounded-3 obj-contain border" src="assets/images/posts/3.png" width="72" height="72">
+              </div>
+              <div class="pt-3 pe-5">
+                <h6 class="card-title mb-0">
+                  <a href="#">Kent Sumayang</a>
+                </h6>
+                <p class="mb-1 text-muted"> Back End Developer</p>
+                <span class="badge bg-warning">
+                  <i class="fa fa-envelope-circle-check"></i> Gmail</span>
+                <span class="text-success small ms-2">
+                  <i style="padding:10px " class="fab fa-lg fa-pinterest"></i>
+                  <i style="padding:2px " class="fab fa-lg fa-facebook"></i>
+                  <i style="padding:10px " class="fab fa-lg fa-instagram"></i> </span>
+              </div>
+            </div>
+            <!-- card-body.// -->
+          </article>
+        </div>
+        <!-- col.// -->
+      </div>
+      <!-- row.// -->
+      <!-- =================== COMPONENT 3 .// ================== -->
+      <br>
+      <br>
+
+      <br>
+      <br>
+      <!-- ============= for the result ======================= -->
+      <div class="p-5" style="background-color: #DBDBDB">
+        <p class="text-center m-0 text-muted">View the list from the fill up form</p><br>
+        <div>
+          <aside class="card shadow">
+            <!-- modal 1 -->
+            <div class="card" tabindex="-1" style="display: block; position: static;">
+              <div class="modal-dialog">
+
+                <div class="content-body">
+                  <div class="col-md-12" id="chan">
+                    <h3>List of Student</h3>
+                    <div class="outerDiv">
+                      <div class="row">
+                        <div class="col-md-12">
+
+                        </div>
+                        <div class="col-md-5">
+                          <select [(ngModel)]="sortBy" (change)="onSort()" class="form-control">
+                            <option selected value="">Select Sort By</option>
+                            <option>Name</option>
+                            <option>Course</option>
+                            <option>Email</option>
+                            <option>Batch</option>
+                          </select>
+                        </div>
+                        <div class="col-md-5  ">
+                          <input type="text" placeholder="Search Text" [(ngModel)]="searchText"
+                            (ngModelChange)="onSearch()" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Sr</th>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Email</th>
+                                <th>Batch</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody class="next">
+                              <ng-container *ngIf="homeArr.length != 0">
+                                <tr *ngFor="let item of homeArr;let sr = index">
+                                  <td>{{sr+1}}</td>
+                                  <td>{{item.FirstName}} {{item.LastName}}</td>
+                                  <td>{{item.Course}}</td>
+                                  <td>{{item.Email}}</td>
+                                  <td>{{item.Batch}}</td>
+
+                                  <td class="text-center">
+                                    <i class="fa fa-pencil-square" style="color: blueviolet;font-size: 19px;"
+                                      (click)="onEdit(item)" aria-hidden="true"></i>
+                                    <i class="fa fa-trash mx-2" style="color:red;font-size: 19px;"
+                                      (click)="onDelete(item)" aria-hidden="true"></i>
+                                  </td>
+                                </tr>
+                              </ng-container>
+                              <ng-container *ngIf="homeArr.length == 0">
+                                <tr>
+                                  <td colspan="8" class="text-center"> No Record Present</td>
+                                </tr>
+                              </ng-container>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+
+                </div>
+                <!-- modal-body.// -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-light" data-bs-dismiss="modal" fdprocessedid="">Close</button>
+                  <button type="button" class="btn btn-primary" fdprocessedid="">Save changes</button>
+                </div>
+                <!-- modal-footer.// -->
+              </div>
+              <!-- modal-content.// -->
+
+              <!-- modal-dialog.// -->
+
+              <!-- modal 1.// -->
+
+            </div>
+            <!-- row .// -->
+
+            <!-- p-4 .// -->
+
+            <!-- container .// -->
+          </aside>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <footer class="section-footer bg-dark footer-dark">
+    <div class="container">
+      <section class="footer-main padding-y">
+        <div class="row">
+          <aside class=" col-lg-6">
+            <article class="me-lg-4">
+              <p class="mt-3"> © 2023 - 2024 Group 1 Attendance System. <br> All rights reserved. </p>
+            </article>
+          </aside>
+
+          <aside class=" col-lg-6">
+            <h6 class="title">Have Questions?</h6>
+            <p>Stay in touch with latest updates about our System </p>
+
+            <form class="mb-3">
+              <div class="input-group">
+                <input class="form-control" type="text" placeholder="Enter Your Question here">
+                <button class="btn btn-warning" type="submit">
+                  Send
+                </button>
+              </div> <!-- input-group.// -->
+            </form>
+          </aside>
+        </div> <!-- row.// -->
+      </section> <!-- footer-top.// -->
+
+      <section class="footer-bottom d-flex justify-content-lg-between border-top">
+        <div style="padding:10px">
+          <i style="padding:10px " class="fab fa-lg fa-pinterest"></i>
+          <i style="padding:10px " class="fab fa-lg fa-facebook"></i>
+          <i style="padding:10px " class="fab fa-lg fa-instagram"></i>
+          <i style="padding:10px " class="fa fa-envelope"></i>
+        </div>
+        <img style="height:3rem; margin-left: -6rem;" src="">
+        <p class="float-end"><a style="color: white;" href="home">Back to top</a></p>
+      </section>
+
+    </div> <!-- container end.// -->
+
+  </footer>
+  <aside class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas_cart">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" style="color:orangered;margin-left:8rem">My Profile</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <figure class="itemside mb-4">
+        <div class="aside">
+          <img src="assets/" class="border img-sm rounded">
+        </div>
+        <figcaption class="info">
+          <a href="home" class="btn btn-icon btn-light float-end"><i class="fa fa-user-alt"></i></a>
+          <p> Christian Misa</p>
+
+        </figcaption>
+      </figure>
+
+
+
+      <div class="mb-3" style="text-align:center">
+        <a href="/login" class="btn w-50 btn-success "> LogOut </a>
+      </div>
+
+
+    </div> <!-- offcanvas-body -->
+  </aside> <!-- offcanvas -->
+
+</body>
+
+</html>

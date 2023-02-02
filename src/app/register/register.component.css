@@ -1,0 +1,190 @@
+
+
+ body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: url("https://thumbs.dreamstime.com/b/attendance-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918437.jpg") no-repeat center/ cover;
+
+
+}
+.main{
+	width: 350px;
+	height: 500px;
+	/* background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover; */
+	border-radius: 32px;
+	box-shadow: 5px 20px 50px #000;
+  backdrop-filter: blur(5px);
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+  text-align: center;
+  justify-items: center;
+}
+label{
+	color: #fff;
+	font-size: 2.5em;
+
+	justify-content: center;
+	display: flex;
+	margin: 27px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+
+}
+input{
+    height: 28px;
+    background: #d1b46588;
+    justify-content: center;
+    display: flex;
+    margin: 22px auto;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: rgba(155, 142, 48, 0.607);
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 100px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background:rgb(155, 143, 48);
+}
+
+
+.al{
+  color: black;
+  justify-content: center;
+  text-align: center;
+  margin-top: -15px;
+
+
+}
+
+.mon{
+  text-align: center;
+  justify-items: center;
+  width: 290px;
+  margin-left: 30px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+
+
+}
+
+.rem{
+  margin-right: 135px;
+  margin-top: -22px;
+  color: black;
+}
+
+
+input .check{
+  margin-top: 100px;
+
+}
+
+
+
+
+/*
+
+
+
+
+.wrapper{
+  height: 100vh;
+  width: 100%;
+  background-color: #25283D;
+  font-family: 'Times New Roman', Times, serif;
+  float: left;
+
+}
+
+#clock{
+  width: 280px;
+  height: 280px;
+  background-color: #25283D;
+  border: 18px solid #1e213a;
+  border-radius: 50%;
+  margin: 200px auto;
+  position: relative;
+  box-shadow: inset 0 5px 25px #00000080,
+  0 5px 25px #00000080,
+  0 5px 30px #00000080,
+  0 5px 35px #00000080,
+  0 5px 35px #00000080,
+  0 5px 35px #00000080,
+}
+
+#clock::before{
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  left: -18px;
+  top: -10px;
+  border: 18px solid #cccccc;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+#clock::after{
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #c7d8f8;
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 9px);
+  top: calc(50% - 9px);
+  box-shadow: 0 2px 4px #00000026;
+}
+
+
+#clock li {
+  list-style: none;
+  position: absolute;
+
+}
+
+.numbers{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  padding: 5%;
+  text-align: center;
+}
+
+.numbers span{
+  display: block;
+  color: #dbe7fd;
+  font-size: 38px;
+  text-shadow: 0 5px 18px #00000026, 0 2px 3px #00000033;
+}
+
+ */

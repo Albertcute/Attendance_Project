@@ -1,0 +1,11 @@
+#chan .form-control{
+  font-size: 16px;
+}
+#chan .form-control option{
+  padding: 0 .75rem !important;
+  border: 1px solid #3d4042 !important;
+color: green;
+}
+#qr{
+  text-align: center;
+}

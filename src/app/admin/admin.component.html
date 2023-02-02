@@ -1,0 +1,193 @@
+<!-- ======== FOR THE FOOTER OF ADMIN =========== -->
+
+
+<header class="p-3 bg-dark text-white">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+          <use xlink:href="#bootstrap" />
+        </svg>
+      </a>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">List of Student</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Table</a></li>
+      </ul>
+
+
+      <div class="text-end">
+
+
+
+        <div class="modal fade " id="exampleModalToggle" aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">Admin Page</h5><br><br>
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <br><br>
+              I made keeping the student grading process simple and integrated into the student and class flow.
+              Simply add your assements and criteria and you
+              can assign grades easily from anywhere while you are tracking attendance.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                data-bs-dismiss="modal"><i style="padding:10px " class="fa fa-rotate-back"></i>Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-sm btn-outline-light" style="width:7rem" data-bs-toggle="modal"
+        href="#exampleModalToggle" role="button">About</a>
+      </div>
+      <a class="btn btn-sm btn-outline-light" style="width:7rem;margin-right: -10rem;margin-left: 1rem;" data-bs-toggle="modal"
+         role="button">Logout</a>
+    </div>
+  </div>
+
+</header>
+
+
+<!-- ======== FOR THE FOOTER OF ADMIN =========== -->
+
+
+
+<!-- ============= for the result ======================= -->
+<div class="p-5" style="background-color: #DBDBDB">
+  <p style="font-size: 20px;" class="text-center m-0 text-muted">View the list from the fill up form</p><br>
+  <div style="text-align: center;">
+    <div class="card shadow">
+      <!-- modal 1 -->
+      <div class="card" tabindex="-1" style="display: block; position: static;">
+        <div class="modal-dialog">
+
+          <div class="content-body">
+            <div class="col-md-15" id="chan">
+              <h1 style="  font-family:Georgia, 'Times New Roman', Times, serif;
+              ">List of Student</h1><br><br>
+              <div class="outerDiv">
+                <div class="row">
+                  <div class="col-md-12">
+
+                  </div>
+                  <div class="col-md-5">
+                    <select [(ngModel)]="sortBy" (change)="onSort()" class="form-control">
+                      <option selected value="">Select Sort By</option>
+                      <option>Name</option>
+                      <option>Course</option>
+                      <option>Email</option>
+                      <option>Skill</option>
+                      <option>Batch</option>
+                    </select>
+                  </div><br><br><br>
+                  <div class="col-md-5  ">
+                    <input type="text" placeholder="Search Text" [(ngModel)]="searchText" (ngModelChange)="onSearch()"
+                      class="form-control" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12" id="a">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Sr</th>
+                          <th>Name</th>
+                          <th>Course</th>
+                          <th>Email</th>
+                          <th>Batch</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody class="next">
+                        <ng-container *ngIf="adminArr.length != 0">
+                          <tr *ngFor="let item of adminArr;let sr = index">
+                            <td style="color: red;background-color: antiquewhite;">{{sr+1}}</td>
+                            <td>{{item.Name}}</td>
+                            <td>{{item.Course}}</td>
+                            <td>{{item.Email}}</td>
+
+                            <td>{{item.Batch}}</td>
+
+                            <td class="text-center">
+                              <i class="fa fa-pencil-square" style="color: blueviolet;font-size: 19px;"
+                                (click)="onEdit(item)" aria-hidden="true"></i>
+                              <i class="fa fa-trash mx-2" style="color:red;font-size: 19px;" (click)="onDelete(item)"
+                                aria-hidden="true"></i>
+                            </td>
+                          </tr>
+                        </ng-container>
+                        <ng-container *ngIf="adminArr.length == 0">
+                          <tr>
+                            <td colspan="8" class="text-center"> No Record Present</td>
+                          </tr>
+                        </ng-container>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+      <div style="margin-left: -76rem;">
+<img style="margin-top: -40rem" src="assets/images/posts/logo.png" alt="logo">
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<footer class="section-footer bg-dark footer-dark">
+  <div class="container">
+    <section class="footer-main padding-y">
+      <div class="row">
+        <aside class=" col-lg-6">
+          <article class="me-lg-4">
+            <p class="mt-3"> © 2023 - 2024 Group 1 Attendance System. <br> All rights reserved. </p>
+          </article>
+        </aside>
+
+        <aside class=" col-lg-6">
+          <h6 class="title">Have Questions?</h6>
+          <p>Stay in touch with latest updates about our System </p>
+
+          <form class="mb-3">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Enter Your Question here">
+              <button class="btn btn-warning" type="submit">
+                Send
+              </button>
+            </div> <!-- input-group.// -->
+          </form>
+        </aside>
+      </div> <!-- row.// -->
+    </section> <!-- footer-top.// -->
+
+    <section class="footer-bottom d-flex justify-content-lg-between border-top">
+      <div style="padding:10px">
+        <i style="padding:10px " class="fab fa-lg fa-pinterest"></i>
+        <i style="padding:10px " class="fab fa-lg fa-facebook"></i>
+        <i style="padding:10px " class="fab fa-lg fa-instagram"></i>
+        <i style="padding:10px " class="fa fa-envelope"></i>
+      </div>
+      <img style="height:3rem; margin-left: -6rem;" src="assets/images/posts/logo.png">
+    </section>
+
+  </div> <!-- container end.// -->
+
+</footer>
